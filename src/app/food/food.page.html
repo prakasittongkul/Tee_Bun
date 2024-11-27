@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-progress-bar type="indeterminate" color="dark"></ion-progress-bar>
+  <ion-toolbar>
+    <ion-title style="margin-top: -5%;">
+      <h4 style="color: black;font-size: 25px;margin-left: 5%;" class="h4homeas">เลือกประเภทเมนู</h4>
+    </ion-title>
+    <ion-button class="logout" *ngIf="isAdmin" style="display: flex; flex-direction: column; align-items: center; height: 40px; width: 63px; margin-left: 75%; margin-top: -11%;" color="danger" expand="block" (click)="logout()">LOGOUT</ion-button>
+    <ion-buttons slot="start">
+      <ion-button expand="full" (click)="goBack()">ย้อนกลับ</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <!-- แสดงปุ่มเพิ่มเมนูเฉพาะเมื่อเป็นแอดมิน -->
+ 
+
+<ion-content class="custom-background">
+  <div class="button-container">
+    <ion-button *ngIf="isAdmin" (click)="foodcrod()" class="add-menu-button">เพิ่มเมนู</ion-button>
+  </div>
+  <div class="menu-selection-container">
+    <!-- อาหารคาว -->
+   
+
+    <!-- อาหารหวาน -->
+    <div class="menu-item">
+      <img class="menu-image" src="../../assets/img/have29.png" alt="อาหารหวาน" (click)="selectMenu('อาหารหวาน')" />
+      <div class="menu-label">รายการอาหาร</div>
+    </div>
+  </div>
+
+
+</ion-content>

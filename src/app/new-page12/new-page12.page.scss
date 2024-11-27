@@ -1,0 +1,62 @@
+.custom-background {
+  --background: #bfa16d;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดให้ทุกอย่างอยู่ตรงกลางในแนวนอน */
+  justify-content: center; /* จัดให้ทุกอย่างอยู่ตรงกลางในแนวตั้ง */
+  height: 100%;
+  padding: 16px;
+}
+.contact-item {
+  display: flex;
+  align-items: center; /* ทำให้ไอคอนและข้อความอยู่ในแนวเดียวกัน */
+  margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างแถว */
+}
+
+.contact-item ion-col {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item ion-col img, .contact-item ion-col ion-icon {
+  margin-right: 10px; /* เพิ่มระยะห่างระหว่างไอคอนและข้อความ */
+}
+img {
+  width: 120px;
+  height: 120px;
+  margin-top: 5%; /* กำหนดระยะห่างด้านบน */
+  margin-bottom: 20px; /* กำหนดระยะห่างด้านล่าง */
+  border-radius: 50%;
+  margin-left: 35%;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: -1%; /* ปรับตำแหน่งหัวข้อ */
+}
+
+ion-card {
+  background-color: #f5deb3;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px; /* จำกัดขนาดสูงสุด */
+  margin: 20px auto; /* ทำให้ card อยู่ตรงกลาง */
+}
+
+ion-button {
+  --background: rgb(254, 254, 254); /* เปลี่ยนสีปุ่ม */
+}
+
+.back-button {
+  height: 50px;
+  width: 100%;
+  max-width: 250px;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px; /* ระยะห่างด้านบน */
+  margin-left: 20%;
+}

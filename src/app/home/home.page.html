@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true" class="custom-background">
+    <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  
+    <!-- Your page content here -->
+    <div class="center-content">
+      <img src="../../assets/img/good.png" alt="" class="centered-image glowing-image">
+      
+      <ion-button class="custom-backgroundd centered-button glowing-button" color="light" expand="block" (click)="navigateToNewPage13()">
+        ลูกค้า
+      </ion-button>
+  
+      <ion-button class="custom-backgroundd centered-button glowing-button" color="light" expand="block" (click)="navigateToNewPage()">
+        แอดมิน
+      </ion-button>
+    </div>
+  </ion-content>
+  

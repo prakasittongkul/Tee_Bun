@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true" class="custom-background">
+  <div>
+    <img src="../../assets/img/member-icon-png-6.jpg" alt="Image">
+    <h1>ข้อมูลทางร้าน</h1>
+  </div>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <h2>ช่องทางการติดต่อ</h2>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="contact-item">
+          <ion-col size="2">
+            <ion-icon name="call" style="color: green; font-size: 30px;"></ion-icon>
+          </ion-col>
+          <ion-col size="10">
+            <p>เบอร์โทร 0953546413</p>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="contact-item">
+          <ion-col size="2">
+            <img src="../../assets/img/line-icon-vector-22.png" style="width: 30px; height: 30px;margin-left: -8%;">
+          </ion-col>
+          <ion-col size="10">
+            <p style="margin-top: -5%;">ID line 417lwyyr</p>
+          </ion-col>
+        </ion-row>
+        
+       
+        
+
+        <ion-row class="contact-item">
+          <ion-col size="2">
+            <ion-icon name="logo-facebook" style="color: #3b5998; font-size: 30px;margin-top: -15%;"></ion-icon>
+          </ion-col>
+          <ion-col size="10">
+            <p>ที่บ้านเพื่อน</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button class="back-button" color="light" (click)="goBack()">
+    ย้อนกลับ
+  </ion-button>
+</ion-content>

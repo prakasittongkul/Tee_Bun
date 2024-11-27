@@ -1,0 +1,26 @@
+<ion-header translucent="true">
+  <ion-toolbar color="">
+    <ion-title class="title">รายการข้อมูลอาหาร</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="loadDataMen($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list lines="full">
+    <ion-item *ngFor="let mb of member" class="ion-no-padding">
+      <ion-avatar slot="start">
+        <img src="assets/food-image.jpg" alt="Food Image" />
+      </ion-avatar>
+      <ion-label class="ion-text-wrap">
+   
+        <h2 class="mb-1" style="font-size: 1.2em; font-weight: bold;">{{ mb.name }}</h2>
+        <p class="text-muted">ราคา: <span style="font-weight: bold;">{{ mb.price }} บาท</span></p>
+        <p>ประเภท: <span class="type-text">{{ mb.type }}</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+        <ion-button color="primary"  name="return-down-back-outline"class="login-button" (click)="goBack()">ย้อนกลับ</ion-button>
+</ion-content>

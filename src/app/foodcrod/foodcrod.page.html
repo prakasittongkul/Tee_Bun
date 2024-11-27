@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >อาหารคาว</ion-title>
+    <ion-buttons slot="start">
+      <ion-button expand="full" (click)="goBack()">ย้อนกลับ</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <!-- แสดงปุ่มเพิ่มเมนูเฉพาะเมื่อเป็นแอดมิน -->
+      <ion-button *ngIf="isAdmin" (click)="foodcrod()">เพิ่มเมนู</ion-button>
+    </ion-buttons>
+ 
+ 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-background">
+
+
+</ion-content>

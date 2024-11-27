@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="perpul">
+      <ion-title color="light">
+</ion-title>
+<ion-button style="color: black;" expand="full" (click)="goBack()" class="back-button">ย้อนกลับ</ion-button>
+
+</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-label class="text-center">
+      <h1><b>กรอกข้อมูลอาหาร</b></h1>
+  </ion-label>
+
+  <ion-item>
+      <ion-label position="floating">ชื่อเมนู</ion-label>
+      <ion-input type="text" [(ngModel)]="txtname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label position="floating">ราคา</ion-label>
+      <ion-input type="text" [(ngModel)]="txtprice"></ion-input>
+  </ion-item>
+
+
+
+
+  <ion-list>
+      <ion-item>
+          <ion-label>ประเภท</ion-label>
+          <ion-select aria-label="Fruit" interface="popover" slot="end" placeholder="ประเภท" [(ngModel)]="txttype">
+              <ion-select-option value="อาหารคาว">อาหารคาว</ion-select-option>
+              <ion-select-option value="อาหารหวาน">อาหารหวาน</ion-select-option>
+              <ion-select-option value="เครื่องดื่ม">เครื่องดื่ม</ion-select-option>
+            
+          </ion-select>
+      </ion-item>
+  </ion-list>
+
+  <div class="text-center mt-4">
+      <ion-button style="color: black;" (click)="addmember()">บันทึกข้อมูล</ion-button>
+      <ion-button  (click)="show()"color="warning">แสดงข้อมูล</ion-button>
+     
+  </div>
+</ion-content>

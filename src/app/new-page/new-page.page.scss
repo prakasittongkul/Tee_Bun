@@ -1,0 +1,61 @@
+.custom-background {
+  --background: #BFA16D;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  max-width: 400px; /* จำกัดความกว้างให้พอดี */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* ให้พื้นหลังของฟอร์มเป็นสีขาว */
+  border-radius: 10px; /* มุมโค้ง */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ฟอร์ม */
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%; /* ทำให้ภาพเป็นวงกลม */
+  object-fit: cover; /* ให้ภาพไม่เบียดบังขอบ */
+  
+}
+
+.input-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  width: 100%;
+  max-width: 250px;
+  font-size: 20px;
+  margin-bottom: 20px; /* เพิ่มระยะห่างจากปุ่ม */
+  border-radius: 25px; /* ปรับมุมของปุ่ม */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ปุ่ม */
+  
+}
+
+.back-button {
+  width: 100%;
+  max-width: 250px;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* เพิ่มแอนิเมชัน */
+
+}
+
+.back-button:hover {
+  background-color: #ccc; /* เปลี่ยนสีเมื่อ hover */
+  transform: scale(1.05); /* ขยายขนาดเมื่อ hover */
+}

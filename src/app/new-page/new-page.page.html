@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true" class="custom-background">
+  <div class="container">
+    <!-- Image -->
+    <ion-img src="../../assets/img/good.png" alt="Image" class="image"></ion-img>
+
+    <!-- Username Input -->
+    <ion-item class="input-item">
+      <ion-label position="floating">ชื่อผู้ใช้</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <!-- Password Input -->
+    <ion-item class="input-item">
+      <ion-label position="floating">รหัสผ่าน</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <!-- LOGIN Button -->
+    <ion-button class="login-button" color="primary" expand="full" (click)="checkCredentials()">
+      LOGIN
+    </ion-button>
+
+    <!-- Go Back Button -->
+    <ion-button class="back-button" color="light" (click)="goBack()">
+      ย้อนกลับ
+    </ion-button>
+  </div>
+</ion-content>
